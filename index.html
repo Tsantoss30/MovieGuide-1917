@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Guide</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    :root{
+        --cor-primaria: #000000;
+        --cor-secundaria: #F6F6F6;
+        --cor-terciaria: #05299E;
+    }
+
+    body{
+        box-sizing: border-box;
+        background-color: var(--cor-primaria);
+        color: var(--cor-secundaria);
+    }
+
+    .cabecalho{
+        background-color: var(--cor-terciaria);
+        text-align: center;
+        padding: 1% 0% 1% 0%;
+    }
+
+    .cabecalho__subtitulo{
+        font-size: 1.5em;
+        font-family: 'Krona One', sans-serif;
+    }
+
+    .apresentacao{
+        padding-top: 2%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .apresentacao__conteudo{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+        margin-bottom: 2%;
+    }
+
+    .apresentacao__conteudo__titulo{
+        font-size: 2.5em;
+        font-family: 'Krona One', sans-serif;
+    }
+
+    img{
+        width: 30%;
+        border: 2px solid var(--cor-terciaria);
+        padding: 20px;
+    }
+
+    .apresentacao__conteudo__link{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .apresentacao__conteudo__link__navegacao{
+        text-decoration: none;
+        color: var(--cor-secundaria);
+        font-size: 1.5em;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bolder;
+        border: 2px solid var(--cor-terciaria);
+        border-radius: 8px;
+        width: 50%;
+        padding: 20px;
+    }
+
+    .apresentacao__conteudo__link__navegacao:hover{
+        background-color: #272727;
+    }
+
+    .rodape{
+        background-color: var(--cor-terciaria);
+        color: var(--cor-primaria);
+        padding: 24px;
+        text-align: center;
+        font-size: 1.5em;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bolder;
+    }
+
+    @media (max-width: 1530px){
+
+        .cabecalho{
+            padding: 10px;
+        }
+    
+        .apresentacao{
+            padding: 5%;
+        }
+    
+        .apresentacao__conteudo{
+            width: auto;
+        }
+
+        img{
+            width: 80%;
+        }
+
+        .apresentacao__conteudo__link{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <header class="cabecalho">
+        <h2 class="cabecalho__subtitulo">Movie Guide</h2>
+    </header>
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo">"1 9 1 7"</h1>
+            <div class="imagem__conteudo">
+                <img src="imagens/1917_poster.jpg" alt="Poster do filme '1917'">
+            </div>
+            <div class="apresentacao__conteudo__link">
+                <a class="apresentacao__conteudo__link__navegacao" href="about.html">Sobre o filme</a>
+                <a class="apresentacao__conteudo__link__navegacao" href="https://www.youtube.com/watch?v=YqNYrYUiMfg" target="_blank">Trailer</a>
+                <a class="apresentacao__conteudo__link__navegacao" href="avaliacao.html">Avaliações</a>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Tiago Pereira</p>
+    </footer>
+</body>
+</html>

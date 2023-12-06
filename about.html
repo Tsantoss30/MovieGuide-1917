@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre o filme</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        :root{
+            --cor-primaria: #000000;
+            --cor-secundaria: #F6F6F6;
+            --cor-terciaria: #05299E;
+        }
+
+        body{
+            background-color: var(--cor-terciaria);
+            color: var(--cor-primaria);
+        }
+
+        header{
+            background-color: var(--cor-primaria);
+            text-align: center;
+            padding: 1% 0% 1% 0%;
+        }
+
+        header > h2 {
+            color: var(--cor-secundaria);
+            font-family: 'Krona One', sans-serif;
+            font-size: 1.5em;
+
+        }
+
+        nav{
+            background-color: var(--cor-terciaria);
+            padding: 10px;
+            max-width: 770;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: 20px;
+            color: var(--cor-secundaria);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bolder;
+        }
+
+        nav a:hover{
+            background-color: var(--cor-terciaria);
+            color: var(--cor-secundaria);
+            border-radius: 10px;
+        }
+
+        main{
+            padding: 25px;
+            background-color: var(--cor-secundaria);
+            min-width: 300px;
+            max-width: 1200px;
+            margin: auto;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        main > h1{
+            font-size: 2.5em;
+            font-family: 'Krona One', sans-serif;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        main p{
+            font-size: 1em;
+            font-family: 'Montserrat', sans-serif;
+            text-indent: 30px;
+            text-align: justify;
+            margin: 20px 0px 20px 0px;
+        }
+
+        strong{
+            color: #05299E;
+        }
+
+        main img{
+            display: block;
+            margin: auto;
+            max-width: 60%;
+        }
+
+        .bloco__personalizado{
+            background-color: var(--cor-primaria);
+            margin: 0px -25px 30px -25px;
+            padding: 20px;
+        }
+
+        main h2{
+            font-size: 1.8em;
+            margin: 20px 0px 20px 0px;
+            font-family: 'Krona One', sans-serif;
+        }
+
+        aside{
+            background-color: #272727;
+            color: var(--cor-secundaria);
+            padding: 20px;
+        }
+
+        aside > h3{
+            text-align: center;
+            font-family: 'Krona One', sans-serif;
+            font-size: 1.3em;
+            margin-bottom: 20px;
+        }
+
+        aside ul{
+            font-family: 'Montserrat', sans-serif;
+            columns: 2;
+        }
+
+        footer{
+            background-color: var(--cor-primaria);
+            color: var(--cor-secundaria);
+            font-weight: bolder;
+            text-align: center;
+            padding: 24px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Movie Guide</h2>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="avaliacao.html">Avaliações</a>
+    </nav>
+    <main>
+        <h1>Sobre o filme</h1>
+        <p>"1917" é um filme de guerra lançado em 2019, dirigido por <strong>Sam Mendes</strong>. O filme é notável por sua abordagem única de apresentar a história em tempo real, dando a impressão de ser filmado em um <strong>único take</strong>. Embora na realidade tenha sido filmado em segmentos contínuos, a técnica proporciona uma experiência cinematográfica imersiva.</p>
+        <p>O filme se passa durante a <strong>Primeira Guerra Mundial</strong> e segue dois soldados britânicos, interpretados por <strong>George MacKay</strong> e <strong>Dean-Charles Chapman</strong>, que recebem uma missão aparentemente impossível: atravessar o território inimigo para entregar uma mensagem urgente que pode salvar a vida de centenas de soldados, incluindo o irmão de um deles.</p>
+        <div class="bloco__personalizado">
+            <img src="imagens/1917-foto2.jpg" alt="Atores George MacKay e Dean-Charles Chapman em uma cena do filme">
+        </div>
+        <p>A <strong>cinematografia</strong> é notável, com Roger Deakins capturando visualmente a brutalidade e a beleza da guerra. A trilha sonora de Thomas Newman também contribui para a atmosfera intensa do filme. "1917" foi elogiado não apenas por sua técnica inovadora de filmagem, mas também por sua representação realista da guerra e pela narrativa envolvente.</p>
+        <div class="bloco__personalizado">
+            <img src="imagens/1917-foto3.jpeg" alt="George MacKay e Dean-Charles Chapman conversando com o diretor Sam Mendes">
+        </div>
+        <h2>Premiações</h2>
+        <p>O filme recebeu vários prêmios e indicações, incluindo <strong>três Oscars</strong> (Melhor Fotografia, Melhor Mixagem de Som e Melhores Efeitos Visuais). A atuação do elenco e a direção de Mendes foram especialmente elogiadas. "1917" foi um sucesso de crítica e bilheteria, proporcionando uma experiência cinematográfica memorável e única para o público.</p>
+        <div class="bloco__personalizado">
+            <img src="imagens/1917-foto4.jpg" alt="O filme recebeu 3 Oscars">
+        </div>
+        <aside>
+            <h3>Ficha técnica</h3>
+            <ul>
+                <li>Direção: Sam Mendes</li>
+                <li>Roteiro: Sam Mendes e Krysty Wilson-Cairns</li>
+                <li>Fotografia: Roger Deakins</li>
+                <li>Música: Thomas Newman</li>
+                <li>Duração: 119 minutos</li>
+                <li>Lançamento: Dezembro de 2019 (eua)</li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>Desenvovido por Tiago Pereira</p>
+    </footer>
+</body>
+</html>
